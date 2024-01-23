@@ -1,3 +1,2 @@
-import eldontestetele
-import Szamitogep_program
-# eldontestetele.tetel()
+import szamitogep_feladatok
+szamitogep_feladatok.lista_kiiras()

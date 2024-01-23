@@ -26,3 +26,26 @@ for i in range(len(szamitogepek)):
     if szamitogepek[i].ram > szamitogepek[max_index].ram:
         max_index = i
 print(szamitogepek[max_index].oprsz)
+
+
+
+vizsgaltRam = 16
+print("Van-e olyan gép aminek", vizsgaltRam,"-nál több RAM-ja van? ")
+van = False
+for i in range(len(szamitogepek)):
+    if szamitogepek[i].ram > vizsgaltRam and szamitogepek[i].oprsz == "win":
+        van = True
+if van == True:
+    print("van")
+else:
+    print("nincs")
+
+
+
+print("Hány db windows gép van? ")
+db = 0
+for i in range(len(szamitogepek)):
+    if szamitogepek[i].oprsz == "win":
+        db += 1
+print(db)
+
